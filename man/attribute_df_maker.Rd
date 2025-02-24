@@ -4,10 +4,12 @@
 \alias{attribute_df_maker}
 \title{Create Attribute DataFrame from NCBI BioSample}
 \usage{
-attribute_df_maker(id)
+attribute_df_maker(id, delay = 0.2)
 }
 \arguments{
-\item{id}{A character string representing the NCBI BioSample ID.}
+\item{id}{A character string (or vector) of NCBI BioSample ID (e.g.SAMN12345678).}
+
+\item{delay}{Delay if a vector of strings given to avoid time out errors}
 }
 \value{
 A data frame with columns for attribute names, their corresponding values, and the BioSample ID.
@@ -19,7 +21,7 @@ and constructs a data frame containing these attributes along with their values.
 \examples{
 \dontrun{
 # Example usage:
-result <- attribute_df_maker("SAMN12345678")
+result <- attribute_df_maker(c("SAMN12345678","SAMN12345679"))
 print(result)
 }
 }

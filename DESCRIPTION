@@ -1,6 +1,6 @@
 Package: ncbiSeaRch
 Title: NCBI Entrez Search Wrapper
-Version: 0.0.2
+Version: 0.0.4
 Authors@R: 
     person("David", "McGaughey", , "mcgaugheyd@mail.nih.gov", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-9224-2888"))
