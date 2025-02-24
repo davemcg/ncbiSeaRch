@@ -49,6 +49,7 @@ value_grabber <- function(attribute, xml_list_obj) {
 #' @import XML
 #' @export
 attribute_df_maker <- function(id) {
+  attribute <- NULL
   # fetch xml object from NCBI
   eutil_grab <- efetch(uid = id, db = "biosample", retmode = "xml")
   # extract attributes, convert to list
