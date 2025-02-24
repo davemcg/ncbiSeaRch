@@ -44,6 +44,9 @@ value_grabber <- function(attribute, xml_list_obj) {
 #' result <- attribute_df_maker("SAMN12345678")
 #' print(result)
 #' }
+#' @import reutils
+#' @import dplyr
+#' @import XML
 #' @export
 attribute_df_maker <- function(id) {
   # fetch xml object from NCBI
