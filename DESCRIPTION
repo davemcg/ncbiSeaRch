@@ -1,0 +1,15 @@
+Package: ncbiSeaRch
+Title: NCBI Entrez Search Wrapper
+Version: 0.0.1
+Authors@R: 
+    person("David", "McGaughey", , "mcgaugheyd@mail.nih.gov", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9224-2888"))
+Description: Pull NCBI Entrez search results into a data frame
+License: CC0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+  dplyr,
+  XML,
+  reutils
